@@ -1,7 +1,7 @@
 # Cloud Security Home Lab
 
 **Author:** Andrew Mwine  
-**Goal:** Build hands-on cloud security skills to demonstrate to employers  
+**Goal:** Build hands-on cloud security skills to demonstrate to those who might have intrest  
 **Platform:** AWS (Amazon Web Services)  
 **Status:** 🟢 In progress
 
