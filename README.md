@@ -1,7 +1,7 @@
 # Cloud Security Home Lab
 
 **Author:** Andrew Mwine  
-**Goal:** Build hands-on cloud security skills to demonstrate to those who might have intrest  
+**Goal:** Build hands-on cloud security skills to demonstrate to employers  
 **Platform:** AWS (Amazon Web Services)  
 **Status:** 🟢 In progress
 
@@ -70,7 +70,7 @@ A user should only have the minimum permissions they need to do their job — no
 
 This simulates a freshly created service account or developer account with no access yet.
 
-![lab-user created with no permissions](screenshots/01-lab-user-no-permissions.png)
+![lab-user created with no permissions](01-lab-user-no-permissions.png)
 
 *What you can see: lab-user exists, Console access is Disabled, and the Permissions summary shows 0 policies attached. This user cannot do anything in AWS.*
 
@@ -80,7 +80,7 @@ This simulates a freshly created service account or developer account with no ac
 
 This gives lab-user the ability to list and read S3 buckets — but not create, modify, or delete anything.
 
-![S3 read-only policy attached to lab-user](screenshots/03-s3-readonly-policy-attached.png)
+![S3 read-only policy attached to lab-user](03-s3-readonly-policy-attached.png)
 
 *What you can see: AmazonS3ReadOnlyAccess is attached directly to lab-user. The user can now read S3 but has no other permissions in the entire AWS account.*
 
@@ -108,7 +108,7 @@ A fresh bucket is private by default — this is the correct, secure state.
 
 I went to the bucket → Permissions → Block public access → Edit → unticked all four checkboxes → saved.
 
-![S3 bucket with public access turned on](screenshots/04-s3-bucket-public-misconfigured.png)
+![S3 bucket with public access turned on](04-s3-bucket-public-misconfigured.png)
 
 *What you can see: "Block all public access" is set to OFF with a warning triangle. This bucket is now exposed to the internet. Any file uploaded here would be publicly readable by anyone with the URL.*
 
@@ -120,7 +120,7 @@ I went to the bucket → Permissions → Block public access → Edit → untick
 
 I went back to Permissions → Edit → ticked "Block all public access" → saved.
 
-![S3 bucket with public access fixed](screenshots/05-s3-bucket-public-fixed.png)
+![S3 bucket with public access fixed](05-s3-bucket-public-fixed.png)
 
 *What you can see: "Block all public access" is back ON. The bucket is now private and secure.*
 
