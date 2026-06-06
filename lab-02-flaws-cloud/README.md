@@ -293,7 +293,7 @@ The `SecurityAudit` policy is often given to security tools and auditors. Combin
 4. **Never commit credentials** to Git — use git-secrets to enforce this
 5. **Apply least privilege** to all IAM users, roles, and policies
 6. **Monitor CloudTrail** for enumeration patterns and unusual API activity
-7. **Incase of leaked credentials on Git, make sure to deactivate and delete them on AWS ASAP and also check to find if someone has found them and used them for any purpose.
+
 
 ---
 
